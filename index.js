@@ -1,51 +1,51 @@
 const productos = [
   {
     id: 1,
-    nombre: "reloj",
+    nombre: "reloj1",
     imagen: "img.jpg/img.jpg1.webp",
-    precio: 110000,
+    precio: $110000,
   },
   {
     id: 2,
     nombre: "reloj2",
     imagen: "img.jpg/img.jpg2.webp",
-    precio: 120000,
+    precio: $120000,
   },
   {
     id: 3,
     nombre: "reloj3",
     imagen: "img.jpg/img.jpg3.png",
-    precio: 130000,
+    precio: $130000,
   },
   {
     id: 4,
     nombre: "reloj4",
     imagen: "img.jpg/img.jpg4.png",
-    precio: 140000,
+    precio: $140000,
   },
   {
     id: 5,
     nombre: "reloj5",
     imagen: "img.jpg/img.jpg5.webp",
-    precio: 150000,
+    precio: $150000,
   },
   {
     id: 6,
     nombre: "reloj6",
     imagen: "img.jpg/img.jpg6.webp",
-    precio: 160000,
+    precio: $160000,
   },
   {
     id: 7,
     nombre: "reloj7",
     imagen: "img.jpg/img.jpg7.png",
-    precio: 170000,
+    precio: $170000,
   },
   {
     id: 8,
     nombre: "reloj8",
     imagen: "img.jpg/img.jpg8.png",
-    precio: 180000,
+    precio: $180000,
   },
 ];
 
@@ -71,7 +71,7 @@ while (seleccion != "no") {
   let precio = 0;
 
   if (
-    producto == "reloj " ||
+    producto == "reloj1 " ||
     producto == "reloj2  " ||
     producto == "reloj3 " ||
     producto == "reloj4  " ||
@@ -82,38 +82,39 @@ while (seleccion != "no") {
   ) {
     switch (producto) {
       case "reloj":
-        precio = 110000;
+        precio = $110000;
         break;
       case "reloj2":
-        precio = 120000;
+        precio = $120000;
         break;
       case "reloj3":
-        precio = 130000;
+        precio = $130000;
         break;
       case "reloj4":
-        precio = 140000;
+        precio = $140000;
         break;
       case "reloj5":
-        precio = 150000;
+        precio = $150000;
         break;
       case "reloj6":
-        precio = 160000;
+        precio = $160000;
         break;
       case "reloj7":
-        precio = 170000;
+        precio = $170000;
         break;
       case "reloj8":
-        precio = 180000;
+        precio = $180000;
         break;
 
       default:
         break;
     }
-    let unidades = parseInt(prompt("cuantas unidades desea llevar?"));
+
+    let unidades = parseInt(prompt("cual reloj desearia llevar?"));
     carrito.push({ producto, unidades, precio });
     console.log(carrito);
   } else {
-    alert("no tenemos ese producto");
+    alert("no tenemos ese producto por el momento");
   }
 
   seleccion = prompt("¿Desea seguir comprando?");
@@ -132,3 +133,6 @@ while (seleccion != "no") {
     break;
   }
 }
+
+console.log(carrito); 
+
